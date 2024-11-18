@@ -82,18 +82,18 @@ WSGI_APPLICATION = "GongXi.wsgi.application"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    "default":{
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
     # "default":{
-    #     "ENGINE": "django.db.backends.mysql",
-    #     "NAME": "mindouban",
-    #     "USER":"root",
-    #     "PASSWORD":"root",
-    #     "HOST":'127.0.0.1',
-    #     "PORT":'3306',
+    #     "ENGINE": "django.db.backends.sqlite3",
+    #     "NAME": BASE_DIR / "db.sqlite3",
     # }
+    "default":{
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'gongxi',
+        'USER': 'gongxi',
+        'PASSWORD': '123456',
+        'HOST': '118.31.223.236',
+        'PORT': '3306',
+    }
 }
 
 
